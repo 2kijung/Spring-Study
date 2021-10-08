@@ -1,0 +1,5 @@
+package factroy.framework;
+
+public class DaumMailConnector {
+
+}

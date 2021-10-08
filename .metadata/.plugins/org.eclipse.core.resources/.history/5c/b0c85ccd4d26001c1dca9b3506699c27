@@ -1,0 +1,26 @@
+package factroy.client;
+
+import factroy.framework.ConnectorFactory;
+import factroy.framework.SMTPConnector;
+
+public class run {
+
+	public static void main(String[] args) {
+		
+		//네이버 SMTP서버에 연결을 해보자
+		try {
+			SMTPConnector conn = ConnectorFactory.builder()
+					.url("smtp.daum.com")
+					.id("dlrlwjd1313@naver.com")
+					.password("Asdf7797*")
+					.build().getConnector();
+			conn.connect();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

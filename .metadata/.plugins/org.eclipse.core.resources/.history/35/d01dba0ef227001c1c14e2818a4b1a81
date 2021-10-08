@@ -1,0 +1,43 @@
+package test03;
+
+import java.util.Date;
+
+public class score {
+	private Date year;
+	private Date month;
+	private Date day;
+	
+	public score() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "day [year=" + year + ", month=" + month + ", day=" + day + "]";
+	}
+
+	public Date getYear() {
+		return year;
+	}
+
+	public void setYear(Date year) {
+		this.year = year;
+	}
+
+	public Date getMonth() {
+		return month;
+	}
+
+	public void setMonth(Date month) {
+		this.month = month;
+	}
+
+	public Date getDay() {
+		return day;
+	}
+
+	public void setDay(Date day) {
+		this.day = day;
+	}
+
+}
