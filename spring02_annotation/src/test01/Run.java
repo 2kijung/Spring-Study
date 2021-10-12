@@ -7,7 +7,10 @@ public class Run {
 	public static void main(String[] args) {
 		ApplicationContext context =
 				new ClassPathXmlApplicationContext("test01/applicationContext.xml");
-		System.out.println(context.getBean("wheelBean"));
-		
+
+		Wheel wheel =context.getBean("wheel",Wheel.class);
+		wheel.setRadius(100000);
+		System.out.println(context.getBean("wheel2"));
+		System.out.println("car");
 	}
 }

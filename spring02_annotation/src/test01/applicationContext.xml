@@ -4,12 +4,9 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
-	
-	<bean id="wheelBean" class="test01.Wheel">
-		<property name="radius" value="20"></property>
-	</bean>
-	<bean id="wheelBean2" class="test01.Wheel">
-		<property name="radius" value="30"></property>
+
+	<bean id="wheel2" class="test01.Wheel">
+		<constructor-arg name="radius" value="100"/>
 	</bean>
 	<context:component-scan base-package="test01"/>
 
