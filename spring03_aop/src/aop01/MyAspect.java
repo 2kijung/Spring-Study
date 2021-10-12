@@ -1,40 +1,25 @@
 package aop01;
 
-import java.lang.reflect.InvocationTargetException;
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
+import org.springframework.stereotype.Component;
 
-public class MyAspect implements Developer{
-	
-	private Developer developer;
-	
-	//자바 Reflection : 객체 또는 클래스명을 통해 타입에 대한 정보를 조사할 수 있는 기법.
-	
-	public MyAspect(String className) {
-		try {
-			developer = (Developer) Class.forName(className).getDeclaredConstructor().newInstance();
-		} catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException
-				| NoSuchMethodException | SecurityException | ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+@Component
+public class MyAspect implements MethodInterceptor{
 
 	@Override
-	public void develop() {
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+		System.out.println("출근 카드를 찍는다.");
 
-			System.out.println("출근 카드를 찍는다.");
-			try {
-				//System.out.println(developer.getClass());
-				//Method play = developer.getClass().getDeclaredMethod("play");
-				//play.setAccessible(true);
-				//play.invoke(developer);
-				
-				developer.develop();
-			}catch (Exception e) {
-				e.printStackTrace();
-				System.out.println("쉬는 날이었다.");
-			}finally {
-				System.out.println("집에 간다.");
-		}
+		try {
+			invocation.proceed();
+		}catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("쉬는 날이었다.");
+		}finally {
+			System.out.println("집에 간다.");
+	}
+		return null;
 	}
 	
 }

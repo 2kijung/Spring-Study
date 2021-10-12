@@ -1,6 +1,9 @@
 package aop01;
 
-public class Woman implements Developer{
+import org.springframework.stereotype.Component;
+
+@Component
+public class Woman{
 	public void develop() {
 		System.out.println("Ruby로 개발한다.");
 	}

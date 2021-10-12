@@ -1,7 +1,9 @@
 package aop01;
 
+import org.springframework.stereotype.Component;
 
-public class Man implements Developer{
+@Component
+public class Man {
 	
 	public void develop() {
 
