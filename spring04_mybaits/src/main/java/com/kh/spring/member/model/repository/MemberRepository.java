@@ -1,10 +1,20 @@
 package com.kh.spring.member.model.repository;
 
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
-public interface MemberRepository {
+@Repository
+public class MemberRepository {
 
-	@Select("select password from member where user_id = #{userId}")
-	String selectPasswordByUserId(@Param("userId") String userId);
+	@Autowired
+	private SqlSessionTemplate session;
+	
+	public String selectPasswordByUserId(String userId) {
+		return session.selectOne("com.kh.spring.mybatis.MybatisMapper.selectPasswordByUserId", userId);
+	}
+	
+	
+
+	
 }
