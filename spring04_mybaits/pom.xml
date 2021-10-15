@@ -113,6 +113,19 @@
 		    <artifactId>ojdbc6</artifactId>
 		    <version>11.2.0.3</version>
 		</dependency>
+		<!-- 마이바티스 -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>3.5.7</version>
+		</dependency>
+		<!-- spring orm -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-orm</artifactId>
+		    <version>5.3.10</version>
+		</dependency>
+
 		<!-- Servlet -->
 		<dependency>
 		    <groupId>javax.servlet</groupId>
