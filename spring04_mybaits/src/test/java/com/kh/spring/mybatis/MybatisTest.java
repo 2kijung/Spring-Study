@@ -217,8 +217,12 @@ public class MybatisTest {
       session.update(NAMESPACE + "dynamicSet",member);
    }
    
-   
-   
+   @Test
+   public void procedureUseTypeHandler() {
+	   session.insert(NAMESPACE+"procedureUseTypeHandler",
+			   Map.of("userId","DEV","title","타입핸들러와 마이바티스","rentBookCnt",2,
+					   "bkIdxs",List.of("100000","100000")));
+   }
    
    
    

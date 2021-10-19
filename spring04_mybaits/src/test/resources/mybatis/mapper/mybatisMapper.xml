@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-  <mapper namespace="com.kh.spring.mybatis.MybatisMapper">
+  <mapper namespace="com.kh.spring.mybatis.MybatisRepository">
     <!-- 
        #{} vs ${}
        #{} : PreparedStatement에서 쿼리템플릿을 완성 시킨 다음, 파라미터값을 전달받아 쿼리를 완성
@@ -214,14 +214,13 @@
      </set>
   </update>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  <insert id="procedureUseTypeHandler">
+  	{call sp_rent_insert(
+  		#{userId, mode=IN}
+  		,#{title,mode=IN}
+  		,#{rentBookCnt,mode=IN}
+  		,#{bkIdxs,mode=IN, typeHandler= com.kh.spring.common.mybatis.BkIdxsTypeHandler}
+  	)}
+  </insert>
   </mapper>
   
