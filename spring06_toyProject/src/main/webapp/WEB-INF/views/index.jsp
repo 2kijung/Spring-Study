@@ -59,7 +59,7 @@ input {
 
 
 <c:if test="${empty authentication}">
-	<h2><a href="/member/login-form">login</a></h2>
+	<h2><a href="/member/login">login</a></h2>
 	<h2><a href="/member/join-form">회원가입</a></h2>
 </c:if>
 
