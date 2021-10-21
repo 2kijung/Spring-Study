@@ -160,6 +160,13 @@
          <artifactId>jstl</artifactId>
          <version>1.2</version>
       </dependency>
+		<!--메일 maven-->
+		<dependency>
+		    <groupId>com.sun.mail</groupId>
+		    <artifactId>javax.mail</artifactId>
+		    <version>1.6.2</version>
+		</dependency>
+
    
       <!-- Test -->
       <dependency>
