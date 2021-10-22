@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="spring02_annotation"/>
 <aop-project name="spring04_mybaits"/>
+<aop-project name="spring02_annotation"/>
 <aop-project name="spring03_aop"/>
-<aop-project name="spring01_bean"/>
 <aop-project name="spring06_toyProject"/>
+<aop-project name="spring01_bean"/>
 <aop-project name="spring_design_parttern"/>
 <aop-project name="spring05_mybaits_interface"/>
 </aop-reference-model>

@@ -57,6 +57,10 @@ input {
 
 <h1 style="text-align: center;">PCLASS TOY PROJECT</h1>
 
+<c:if test="${not empty message}">
+			<span class="valid-msg">${message}</span>
+</c:if>
+		
 
 <c:if test="${empty authentication}">
 	<h2><a href="/member/login">login</a></h2>

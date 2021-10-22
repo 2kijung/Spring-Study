@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="joinForm"/>
+		<item key="selection" value="1.6.2"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="1.6.2"/>
+			<item value="5.3.10"/>
+			<item value="5.3.1p"/>
+			<item value="joinim"/>
+			<item value="join"/>
+			<item value="mailTemplate"/>
+			<item value="join-impl"/>
+			<item value="join-imp"/>
+			<item value="님 환영합니다."/>
 			<item value="joinform"/>
 			<item value="이미"/>
 			<item value="model model"/>
 			<item value="errors"/>
 			<item value="erro"/>
-			<item value="join"/>
 			<item value="sessionId"/>
-			<item value="jse"/>
-			<item value="param"/>
-			<item value="11.2.0"/>
-			<item value="test05"/>
-			<item value="resultMap"/>
-			<item value="map"/>
-			<item value="next"/>
-			<item value="bk_idx"/>
 		</list>
 		<list key="replacehistory">
 		</list>

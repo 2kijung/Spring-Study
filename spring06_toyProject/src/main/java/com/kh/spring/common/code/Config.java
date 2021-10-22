@@ -2,7 +2,7 @@ package com.kh.spring.common.code;
 
 public enum Config {
 	//DOMAIN("https://pclass.ga")
-	DOMAIN("http://localhost9090"),
+	DOMAIN("http://localhost:9090"),
 	COMPANY_EMAIL("dlrlwjd1313@naver.com"),
 	SMTP_AUTHENTICATION_ID("dlrlwjd1313@gmail.com"),
 	SMTP_AUTHENTICATION_PASSWORD("asdf7797"),
