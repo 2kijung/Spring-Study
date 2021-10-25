@@ -34,7 +34,7 @@ public class MemberService {
    public Member authenticateUser(Member member) {
       Member storedMember = memberRepository.selectMemberByUserId(member.getUserId());
       
-      if(passwordEncoder.matches(member.getPassword(), storedMember.getPassword())) {
+      if(storedMember!=null&&passwordEncoder.matches(member.getPassword(), storedMember.getPassword())) {
          return storedMember;
       }
       

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.validation.Errors"/>
     <fullyQualifiedTypeName name="com.kh.spring.common.validator.ValidateResult"/>
     <fullyQualifiedTypeName name="org.springframework.mail.javamail.JavaMailSenderImpl"/>
     <fullyQualifiedTypeName name="javax.mail.internet.MimeMessage"/>
@@ -42,8 +41,6 @@
     <fullyQualifiedTypeName name="org.springframework.util.MultiValueMap"/>
     <fullyQualifiedTypeName name="org.springframework.util.LinkedMultiValueMap"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
-    <fullyQualifiedTypeName name="com.kh.spring.member.validator.JoinFormValidator"/>
-    <fullyQualifiedTypeName name="com.kh.spring.member.validator.JoinForm"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.SessionAttribute"/>
@@ -56,8 +53,11 @@
     <fullyQualifiedTypeName name="org.slf4j.Logger"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
     <fullyQualifiedTypeName name="org.springframework.security.crypto.password.PasswordEncoder"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="com.kh.spring.member.model.dto.Member"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
+    <fullyQualifiedTypeName name="com.kh.spring.member.validator.JoinFormValidator"/>
+    <fullyQualifiedTypeName name="com.kh.spring.member.validator.JoinForm"/>
 </qualifiedTypeNameHistroy>
