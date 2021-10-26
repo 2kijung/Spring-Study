@@ -33,8 +33,11 @@ import com.kh.spring.common.exception.HandlableException;
 import com.kh.spring.common.validator.ValidateResult;
 import com.kh.spring.member.model.dto.Member;
 import com.kh.spring.member.model.service.MemberService;
+import com.kh.spring.member.model.service.MemberServiceImpl;
 import com.kh.spring.member.validator.JoinForm;
 import com.kh.spring.member.validator.JoinFormValidator;
+
+import lombok.RequiredArgsConstructor;
 
 //1. @Controller : 해당 클래스를 applicationContext에 bean으로 등록
 //            Controller와 관련된 annotation을 사용할 수 있게 해준다.
@@ -58,20 +61,14 @@ import com.kh.spring.member.validator.JoinFormValidator;
 // HttpServletRequest, HttpServletResponse, HttpSession
 
 @Controller
+@RequiredArgsConstructor
 @RequestMapping("member")
 public class MemberController {
    
    Logger logger = LoggerFactory.getLogger(this.getClass());
 
-   @Autowired
-   private MemberService memberService;
-   private JoinFormValidator joinFormValidator;
-   
-   public MemberController(MemberService memberService, JoinFormValidator joinFormValidator) {
-      super();
-      this.memberService = memberService;
-      this.joinFormValidator = joinFormValidator;
-   }
+   private final MemberService memberService;
+   private final JoinFormValidator joinFormValidator;
    
    /*
     * Model 속성명 불러오는 방법 

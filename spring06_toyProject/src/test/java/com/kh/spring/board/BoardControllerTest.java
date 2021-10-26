@@ -52,8 +52,8 @@ public class BoardControllerTest {
             .file(file1)
             .file(file2)
             .contentType(MediaType.MULTIPART_FORM_DATA)
-            .param("title", "게시글테스트")
-            .param("content","본문")
+            .param("title", "트랜잭션")
+            .param("content","오우")
             .sessionAttr("authentication", member))
       .andExpect(status().is3xxRedirection())
       .andDo(print());
